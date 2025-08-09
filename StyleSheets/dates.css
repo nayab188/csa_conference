@@ -1,0 +1,85 @@
+/* Timeline Section Styling */
+.section-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700; /* Makes the font bold */
+    font-size: 40px;
+    color: #990000; /* A dark, bold color */
+    text-align: center; /* Centers the text */
+    border-bottom: 5px solid #990000;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+.timeline-section {
+    padding: 60px 0;
+    position: relative;
+}
+
+.timeline {
+    list-style: none;
+    padding: 20px;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: #990000;
+}
+
+.timeline li {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.timeline-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    width: 42.5%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.timeline li:nth-child(even) .timeline-content {
+    margin-left: 52.5%;
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.timeline li::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #990000;
+    border: 3px solid #f4f4f4;
+    z-index: 1;
+}
+
+.date {
+    display: block;
+    font-weight: 700;
+    color: #004d99;
+    margin-bottom: 5px;
+}
+
+.timeline-content p {
+    margin: 0;
+    font-size: 1em;
+    color: #555;
+}

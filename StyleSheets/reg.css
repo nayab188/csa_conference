@@ -1,0 +1,16 @@
+.registration-closed {
+    text-align: center;
+    font-size: 2em; /* Adjust font size as needed */
+    font-weight: bold;
+    color: #990000; /* A bold red color */
+    animation: blink 1.5s linear infinite;
+}
+
+@keyframes blink {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.2;
+    }
+}
